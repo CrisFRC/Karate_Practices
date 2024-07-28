@@ -1,0 +1,11 @@
+
+t
+java:S1104"WMake messageList a static final constant or non-public and provide accessors if needed.(Ÿ¹ÖÛ8æ±Õ2
+N
+java:S1444"1Make this "public static messageList" field final(Ÿ¹ÖÛ8æ±Õ2
+:
+java:S2386"Make this member "protected".(Ÿ¹ÖÛ8±°²Õ2
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ŸŒÌ…ÿÿÿÿÿ8–æ±Õ2
+G	java:S106"+Replace this use of System.out by a logger.(æĞ8˜æ±Õ2
+L	java:S106"+Replace this use of System.out by a logger.(Ñ¹ùøÿÿÿÿ8šæ±Õ2

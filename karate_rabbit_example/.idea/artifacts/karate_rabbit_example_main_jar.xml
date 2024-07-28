@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="karate_rabbit_example.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/karate_rabbit_example_main_jar</output-path>
+    <root id="archive" name="karate_rabbit_example.main.jar">
+      <element id="module-output" name="karate_rabbit_example.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/5.21.0/70797e8a66e800391940edcf21f31423b9768f1/amqp-client-5.21.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.36/6c62681a2f655b49963a5983b8b0950a6120ae14/slf4j-api-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20240303/ebb88e8fb5122b7506d5cf1d69f1ccdb790d22a/json-20240303.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
