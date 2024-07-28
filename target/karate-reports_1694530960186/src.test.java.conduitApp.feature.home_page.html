@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.conduitApp.feature.home_page</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-09-12 10:02:05 a. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Get all tags</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/conduitApp/feature/home_page.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">test for the home page</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">parallel=false</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Get all tags</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiUrl: &#39;https://conduit.productionready.io/api/&#39;
+09:     chanel: &#39;SVN&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userEmail = &#39;karate@testcr.com&#39;
+13:     config.userPassword = &#39;karate123&#39;
+14:   } else if (env == &#39;qa&#39;) {
+15:         config.userEmail = &#39;karate2@test.com&#39;
+16:         config.userPassword = &#39;karate456&#39;
+17:   }
+18:   var accessToken = karate.callSingle(&#39;classpath:/helpers/get_token.feature&#39;,config).authToken
+19:   karate.configure(&#39;headers&#39;, {Authorization:&#39;Token &#39; + accessToken})
+20:   return config;
+21: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:4 Expected comma but found ident
+    chanel: &#39;SVN&#39;
+    ^
+Unnamed:11:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:14:2 Expected eof but found }
+  } else if (env == &#39;qa&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:121)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:117)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1171)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:288)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:363)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:389)
+10:02:05.713 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     apiUrl: &#39;https://conduit.productionready.io/api/&#39;
+09:     chanel: &#39;SVN&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     config.userEmail = &#39;karate@testcr.com&#39;
+13:     config.userPassword = &#39;karate123&#39;
+14:   } else if (env == &#39;qa&#39;) {
+15:         config.userEmail = &#39;karate2@test.com&#39;
+16:         config.userPassword = &#39;karate456&#39;
+17:   }
+18:   var accessToken = karate.callSingle(&#39;classpath:/helpers/get_token.feature&#39;,config).authToken
+19:   karate.configure(&#39;headers&#39;, {Authorization:&#39;Token &#39; + accessToken})
+20:   return config;
+21: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:4 Expected comma but found ident
+    chanel: &#39;SVN&#39;
+    ^
+Unnamed:11:2 Expected ) but found if
+  if (env == &#39;dev&#39;) {
+  ^
+Unnamed:14:2 Expected eof but found }
+  } else if (env == &#39;qa&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:121)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:117)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1171)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:288)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:363)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:389)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
