@@ -1,0 +1,32 @@
+{
+  "article": {
+    "id": "#number",
+    "slug": "#string",
+    "title": "#ignore",
+    "description": "#ignore",
+    "body": "#string",
+    "createdAt": "#ignore",
+    "updatedAt": "#ignore",
+    "authorId": "#number",
+    "tagList": [],
+    "author": {
+      "username": "#ignore",
+      "bio": "#ignore",
+      "image": "##string",
+      "following": "#ignore"
+    },
+    "favoritedBy": [
+      {
+        "id": "#number",
+        "email": "#ignore",
+        "username": "#ignore",
+        "password": "#ignore",
+        "image": "#ignore",
+        "bio": "##string",
+        "demo": "#ignore"
+      }
+    ],
+    "favorited": "#ignore",
+    "favoritesCount": "#number"
+  }
+}
